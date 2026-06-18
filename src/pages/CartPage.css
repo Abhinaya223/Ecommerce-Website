@@ -1,0 +1,122 @@
+.cart-page {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.cart-item-card {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  align-items: center;
+}
+
+.cart-item-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.cart-summary {
+  padding: 1.75rem;
+  border-radius: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.checkout-row,
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+
+.cart-summary .primary-button {
+  margin-top: 1.25rem;
+}
+
+.cart-item-info h3 {
+  margin: 0 0 0.25rem;
+}
+
+.cart-controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.qty-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg);
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+}
+
+.qty-controls button {
+  background: transparent;
+  border: 1px solid var(--border);
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.remove-button {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+}
+
+.cart-item-price {
+  font-weight: 700;
+}
+
+.summary-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-direction: column;
+}
+
+@media (max-width: 900px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cart-item-card {
+    grid-template-columns: 80px 1fr auto;
+  }
+
+  .summary-actions {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 900px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+}

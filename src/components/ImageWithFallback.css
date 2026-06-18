@@ -1,0 +1,8 @@
+.image-placeholder {
+  background: linear-gradient(90deg, #eef2ff, #f8fafc);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
